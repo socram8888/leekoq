@@ -8,7 +8,7 @@ Amongst others, these devices include:
 
  - [Microchip HCS200](http://ww1.microchip.com/downloads/en/devicedoc/40138c.pdf)
  - [Microchip HCS301](http://ww1.microchip.com/downloads/en/devicedoc/21143b.pdf)
- - [EG Micro EG301](https://www.egmicro.com/download/EG301_datasheet.pdf)
+ - [Electronic Giant EG301](https://www.egmicro.com/download/EG301_datasheet.pdf)
 
 Usage example
 -------------
@@ -25,6 +25,8 @@ This project literally has two methods, so using it is pretty straightforward:
 >>> hex(plain)
 '0x12345678'
 ```
+
+Keys are 64-bit integers, and cipher- and plaintexts are 32-bit integers.
 
 License
 -------
