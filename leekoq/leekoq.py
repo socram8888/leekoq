@@ -6,11 +6,11 @@ LUT = 0x3A5C742E
 
 def encrypt(block: int, key: int) -> int:
 	"""
-	Decrypts a 32-bit block of ciphertext using the KeeLoq algorithm.
+	Encrypts a 32-bit block of plaintext using the KeeLoq algorithm.
 
-	:param int block: 32-bit ciphertext block
+	:param int block: 32-bit plaintext block
 	:param int key: 64-bit key
-	:return: 32-bit plaintext block
+	:return: 32-bit ciphertext block
 	:rtype: int
 	"""
 
@@ -25,7 +25,7 @@ def encrypt(block: int, key: int) -> int:
 		block = msb << 31 | block >> 1
 
 		# Rotate key right
-		key = (key & 1) << 31 | key >> 1
+		key = (key & 1) << 63 | key >> 1
 
 	return block
 
@@ -50,6 +50,6 @@ def decrypt(block: int, key: int) -> int:
 		block = (block & 0x7FFFFFFF) << 1 | lsb
 
 		# Rotate key left
-		key = (key & 0x7FFFFFFF) << 1 | key >> 31
+		key = (key & 0x7FFFFFFFFFFFFFFF) << 1 | key >> 63
 
 	return block
