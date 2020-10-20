@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright 2019 Marcos Del Sol Vives <marcos@orca.pet>
+# Copyright 2020 Marcos Del Sol Vives <marcos@orca.pet>
 # SPDX-License-Identifier: WTFPL
 
 import os.path
@@ -15,7 +15,7 @@ def read(file):
 setup(
 	name='leekoq',
 	packages=['leekoq'],
-	version='0.1',
+	version='1.0',
 	license='WTFPL',
 
 	description='Python implementation of Keeloq encryption algorithm',
