@@ -1,4 +1,4 @@
-# Copyright 2019 Marcos Del Sol Vives <marcos@orca.pet>
+# Copyright 2020 Marcos Del Sol Vives <marcos@orca.pet>
 # SPDX-License-Identifier: WTFPL
 
 # 1-bit lookup table for the NLF
